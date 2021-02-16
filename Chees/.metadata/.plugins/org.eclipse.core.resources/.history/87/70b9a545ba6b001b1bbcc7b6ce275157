@@ -1,0 +1,16 @@
+package com.objis.chess;
+
+import javax.swing.JFrame;
+
+public class Fenetre1 {
+
+	public static void main(String[] args) {
+		// TODO Instancier une fenetre
+		JFrame maFenetre1 = new JFrame();
+		// TODO Afficher la JFrame	
+		maFenetre1.setTitle("Chess");
+		maFenetre1.setSize(800,500);
+		maFenetre1.setVisible(true);
+	}
+
+}

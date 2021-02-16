@@ -1,0 +1,33 @@
+package classesDedonnees;
+
+public interface  {
+
+}
+public class Fenetre1 extends JFrame implements ActionListener {
+    private Fenetre fen;
+        private Panneau1 pan = new Panneau1();
+        
+        private bouton bouton1 = new bouton("Start");
+       public Fenetre1(){
+           pan.setLayout(null);
+           this.setTitle("Jeux casse brique");
+           this.setSize(400, 500);
+           this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+           this.setLocationRelativeTo(null);
+        
+           bouton1.setBackground(Color.cyan);
+           bouton1.setBounds(200,150, 300, 200);
+         
+          pan.add(bouton1);   
+            
+                            
+                setContentPane(pan);
+                bouton1.addActionListener(this);
+                this.setVisible(true);                            
+        }
+       public void actionPerformed(ActionEvent arg0) {
+           //Lorsque nous cliquons sur notre bouton, on passe a l'autre fenétre
+          this.dispose();
+            fen = new Fenetre();
+   }             
+}
